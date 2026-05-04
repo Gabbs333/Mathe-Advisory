@@ -29,7 +29,7 @@ export default function Home() {
               Sécuriser, structurer et défendre <span className="text-enora-green">votre entreprise.</span>
             </h1>
             <p className="text-lg sm:text-xl text-slate-200 mb-10 max-w-2xl font-light leading-relaxed">
-              Le cabinet <strong>MA Mathe Advisory</strong> accompagne les entreprises du Cameroun dans leur conformité RH, la gestion de contentieux et le recouvrement. Découvrez également <strong className="text-white tracking-wide">enora<span className="text-enora-green-light">,</span></strong> notre solution spécialisée pour l'optimisation et la gestion de vos sinistres.
+              Le cabinet <strong>MA Mathe Advisory</strong> accompagne les entreprises du Cameroun dans leur conformité RH, la gestion de contentieux et le recouvrement. Découvrez également <strong className="text-white tracking-wide">ENORA</strong>, notre solution spécialisée pour l'optimisation et la gestion de vos sinistres.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/expertise" className="bg-enora-green hover:bg-enora-green-light text-white px-8 py-4 rounded-full font-semibold text-center transition-colors text-lg shadow-lg shadow-enora-green/20">
