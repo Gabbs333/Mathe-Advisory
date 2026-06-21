@@ -28,7 +28,7 @@ export default function Contact() {
                   <MapPin className="w-6 h-6 text-enora-green mt-1 mr-4 shrink-0" />
                   <div>
                     <h4 className="text-white font-medium text-xl">Adresse</h4>
-                    <p className="text-slate-300 mt-2">Douala, Makepe Block L<br/>Cameroun</p>
+                    <p className="text-slate-300 mt-2">Boulevard de la liberte, Akwa, Douala, Cameroun</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -42,7 +42,7 @@ export default function Contact() {
                   <Mail className="w-6 h-6 text-enora-green mt-1 mr-4 shrink-0" />
                   <div>
                     <h4 className="text-white font-medium text-xl">Email</h4>
-                    <p className="text-slate-300 mt-2">mathe2002fr@yahoo.fr</p>
+                    <p className="text-slate-300 mt-2">edithmathe@matheadvisory.pro</p>
                   </div>
                 </div>
               </div>
