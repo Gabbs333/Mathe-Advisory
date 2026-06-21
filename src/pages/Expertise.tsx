@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronRight, X, Phone, ShieldCheck } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { cabinetServices, enoraServices } from '../data';
 
 // Helper to disable body scroll when modal is open
@@ -199,9 +200,9 @@ export default function Expertise() {
           <p className="text-xl text-slate-300 mb-10 leading-relaxed font-light">
             Nos solutions d'audit et de conformité sont ajustées à vos besoins locaux et environnementaux.
           </p>
-          <a href="/contact" className="inline-block bg-enora-gold hover:bg-yellow-500 text-slate-900 px-10 py-5 rounded-full font-bold text-lg transition-transform hover:scale-105 shadow-xl">
+          <Link to="/contact" className="inline-block bg-enora-gold hover:bg-yellow-500 text-slate-900 px-10 py-5 rounded-full font-bold text-lg transition-transform hover:scale-105 shadow-xl">
             Demander un audit gratuit
-          </a>
+          </Link>
         </div>
       </section>
 
