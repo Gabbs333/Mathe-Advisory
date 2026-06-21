@@ -28,7 +28,7 @@ export default function Contact() {
                   <MapPin className="w-6 h-6 text-enora-green mt-1 mr-4 shrink-0" />
                   <div>
                     <h4 className="text-white font-medium text-xl">Adresse</h4>
-                    <p className="text-slate-300 mt-2">Boulevard de la liberte, Akwa, Douala, Cameroun</p>
+                    <p className="text-slate-300 mt-2">Boulevard de la liberté, Akwa, Douala, Cameroun</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -49,8 +49,8 @@ export default function Contact() {
             </div>
             <div className="relative lg:w-1/2 min-h-[400px] lg:min-h-full bg-slate-200">
               {/* Image of modern office building in Douala/Africa context */}
-              <img 
-                src="https://images.pexels.com/photos/5668783/pexels-photo-5668783.jpeg?auto=compress&cs=tinysrgb&w=1000" 
+              <img
+                src="https://images.pexels.com/photos/5668783/pexels-photo-5668783.jpeg?auto=compress&cs=tinysrgb&w=1000"
                 alt="Bâtiment et bureaux modernes en Afrique"
                 className="absolute inset-0 w-full h-full object-cover"
               />

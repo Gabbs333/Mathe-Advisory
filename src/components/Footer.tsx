@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="text-sm text-center md:text-right">
           &copy; {new Date().getFullYear()} MA Mathe Advisory.<br/>
           Tous droits réservés.<br/>
-          Boulevard de la liberte, Akwa, Douala, Cameroun.
+          Boulevard de la liberté, Akwa, Douala, Cameroun.
         </div>
       </div>
     </footer>
