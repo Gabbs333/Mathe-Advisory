@@ -225,9 +225,20 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.06, duration: 0.4 }}
-                className="group relative bg-slate-50 rounded-xl p-5 border border-slate-100 flex flex-col items-center justify-center text-center min-h-[100px] hover:bg-white hover:border-enora-blue/20 hover:shadow-lg transition-all duration-300 cursor-default"
+                className="group relative bg-white rounded-xl p-5 border border-slate-100 flex flex-col items-center justify-center text-center min-h-[100px] hover:border-enora-blue/20 hover:shadow-lg transition-all duration-300 cursor-default"
               >
-                <span className="text-sm sm:text-base font-heading font-bold text-slate-600 group-hover:text-enora-blue transition-colors leading-tight">
+                {client.logo ? (
+                  <img
+                    src={client.logo}
+                    alt={`Logo ${client.name}`}
+                    className="h-10 sm:h-12 w-auto object-contain mb-2 group-hover:scale-105 transition-transform duration-300"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).style.display = 'none';
+                      (e.target as HTMLImageElement).nextElementSibling?.classList.remove('hidden');
+                    }}
+                  />
+                ) : null}
+                <span className={`text-sm sm:text-base font-heading font-bold text-slate-600 group-hover:text-enora-blue transition-colors leading-tight ${client.logo ? 'hidden' : ''}`}>
                   {client.name}
                 </span>
                 <span className="text-[10px] text-slate-400 mt-1.5 font-medium tracking-wide uppercase group-hover:text-enora-green/70 transition-colors">
@@ -262,15 +273,26 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-3 md:gap-4 items-center max-w-5xl mx-auto">
             {partners.map((partner, idx) => (
               <motion.div
-                key={partner}
+                key={partner.name}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.05, duration: 0.3 }}
                 className="group bg-white px-5 py-3 rounded-xl border border-slate-200 flex-shrink-0 hover:border-enora-blue/30 hover:shadow-md transition-all duration-300 cursor-default"
               >
-                <span className="text-sm sm:text-base font-heading font-bold text-slate-500 group-hover:text-enora-blue transition-colors">
-                  {partner}
+                {partner.logo ? (
+                  <img
+                    src={partner.logo}
+                    alt={`Logo ${partner.name}`}
+                    className="h-8 sm:h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).style.display = 'none';
+                      (e.target as HTMLImageElement).nextElementSibling?.classList.remove('hidden');
+                    }}
+                  />
+                ) : null}
+                <span className={`text-sm sm:text-base font-heading font-bold text-slate-500 group-hover:text-enora-blue transition-colors ${partner.logo ? 'hidden' : ''}`}>
+                  {partner.name}
                 </span>
               </motion.div>
             ))}
