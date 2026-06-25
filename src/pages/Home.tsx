@@ -217,7 +217,7 @@ export default function Home() {
             <div className="w-16 h-1 bg-enora-green mx-auto mb-12"></div>
           </motion.div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
             {clients.map((client, idx) => (
               <motion.div
                 key={client.name}

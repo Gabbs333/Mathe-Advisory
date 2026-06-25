@@ -91,18 +91,14 @@ export const enoraServices = [
 ];
 
 export const clients = [
-  { name: "SCT Logistics", sector: "Transit & Logistique", logo: "/logos/clients/sct-logistics.png" },
-  { name: "CAM Industries", sector: "Industrie", logo: "/logos/clients/cam-industries.png" },
-  { name: "BATIPRO SA", sector: "BTP", logo: "/logos/clients/batipro.png" },
-  { name: "AfriTrade Group", sector: "Négoce International", logo: "/logos/clients/afritrade.png" },
-  { name: "Port Transit SA", sector: "Transport Maritime", logo: "/logos/clients/port-transit.png" },
-  { name: "Société Générale de Manutention", sector: "Manutention Portuaire", logo: "/logos/clients/sgm.png" },
-  { name: "Ets. Mballa & Fils", sector: "Distribution", logo: "/logos/clients/mballa.png" },
-  { name: "COTCO SA", sector: "Agro-industrie", logo: "/logos/clients/cotco.png" },
-  { name: "Douala Freight Services", sector: "Transit", logo: "/logos/clients/douala-freight.png" },
-  { name: "Hôtel Akwa Palace", sector: "Hôtellerie", logo: "/logos/clients/akwa-palace.png" },
-  { name: "Clinique Le Meridien", sector: "Santé", logo: "/logos/clients/le-meridien.png" },
-  { name: "CMA CGM Cameroon", sector: "Shipping", logo: "/logos/clients/cma-cgm.png" },
+  { name: "Brasaf", sector: "Agro-industrie", logo: "/logos/clients/brasaf.png" },
+  { name: "Advans Cameroun", sector: "Microfinance", logo: "/logos/clients/advans.png" },
+  { name: "Cameroun Transit Transport & Logistic", sector: "Transit & Logistique", logo: "/logos/clients/cttl.png" },
+  { name: "Halles Déco", sector: "Décoration & BTP", logo: "/logos/clients/halles-deco.png" },
+  { name: "Fermencam", sector: "Agro-industrie", logo: "/logos/clients/fermencam.png" },
+  { name: "Krystal Palace Douala", sector: "Hôtellerie", logo: "/logos/clients/krystal-palace.png" },
+  { name: "Plasticam", sector: "Industrie Plastique", logo: "/logos/clients/plasticam.png" },
+  { name: "Unalor", sector: "Industrie", logo: "/logos/clients/unalor.png" },
 ];
 
 export const partners = [

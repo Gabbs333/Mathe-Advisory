@@ -24,14 +24,23 @@ export default function Navbar() {
               Mathe Advisory
             </span>
           </div>
-          <div className="hidden sm:flex flex-col">
-            <span className="text-2xl font-heading font-extrabold text-enora-blue leading-none tracking-widest">
+          <div className="hidden sm:flex flex-col items-start">
+            <img
+              src="/logos/enora.png"
+              alt="ENORA"
+              className="h-7 w-auto object-contain"
+              onError={(e) => {
+                (e.target as HTMLImageElement).style.display = 'none';
+                (e.target as HTMLImageElement).nextElementSibling?.classList.remove('hidden');
+              }}
+            />
+            <span className="text-2xl font-heading font-extrabold text-enora-blue leading-none tracking-widest hidden">
               ENORA
             </span>
             <span className="text-[10px] font-medium text-slate-500 tracking-wide mt-1">La solution pour vos sinistres</span>
           </div>
         </Link>
-        
+
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8">
           <Link to="/" className={`text-sm font-medium transition-colors ${isActive('/') ? 'text-enora-green' : 'text-slate-600 hover:text-enora-blue'}`}>Accueil</Link>
@@ -46,7 +55,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           className="md:hidden p-2 text-slate-600"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
@@ -57,7 +66,7 @@ export default function Navbar() {
       {/* Mobile Nav */}
       <AnimatePresence>
         {isMobileMenuOpen && (
-          <motion.div 
+          <motion.div
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
