@@ -26,7 +26,7 @@ export default function Navbar() {
           </div>
           <div className="hidden sm:flex flex-col items-start">
             <img
-              src="/logos/enora.png"
+              src="/logos/enora.jpeg"
               alt="ENORA"
               className="h-7 w-auto object-contain"
               onError={(e) => {
