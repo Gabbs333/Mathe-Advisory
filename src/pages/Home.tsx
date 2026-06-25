@@ -1,22 +1,22 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { partners } from '../data';
+import { partners, clients } from '../data';
 
 export default function Home() {
   return (
     <>
       <section className="relative bg-enora-blue text-white overflow-hidden flex min-h-[85vh] items-center">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.pexels.com/photos/5668772/pexels-photo-5668772.jpeg?auto=compress&cs=tinysrgb&w=2000" 
-            alt="Consultante experte souriante au Cameroun" 
+          <img
+            src="https://images.pexels.com/photos/5668772/pexels-photo-5668772.jpeg?auto=compress&cs=tinysrgb&w=2000"
+            alt="Consultante experte souriante au Cameroun"
             className="w-full h-full object-cover object-[center_20%] opacity-40 shrink-0"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-enora-blue via-enora-blue/80 to-transparent"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -45,7 +45,7 @@ export default function Home() {
 
       <section className="bg-enora-gold/10 py-16 border-y border-enora-gold/20">
         <div className="max-w-5xl mx-auto px-4 text-center">
-          <motion.h3 
+          <motion.h3
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -55,11 +55,11 @@ export default function Home() {
           </motion.h3>
         </div>
       </section>
-      
+
       <section className="py-24 lg:py-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -93,12 +93,12 @@ export default function Home() {
                 </li>
               </ul>
               <Link to="/expertise" className="inline-flex items-center text-enora-blue font-bold hover:text-enora-green transition-colors text-lg group">
-                Explorer nos domaines d'intervention 
+                Explorer nos domaines d'intervention
                 <span className="ml-2 transform group-hover:translate-x-1 transition-transform">&rarr;</span>
               </Link>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -107,9 +107,9 @@ export default function Home() {
             >
               {/* Main large image - Corporate professionals */}
               <div className="absolute top-0 right-0 w-4/5 h-[400px] rounded-3xl overflow-hidden shadow-2xl z-20">
-                <img 
-                  src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1200" 
-                  alt="Équipe de professionnels camerounais en pleine concertation" 
+                <img
+                  src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="Équipe de professionnels camerounais en pleine concertation"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-enora-blue/10 mix-blend-multiply"></div>
@@ -117,9 +117,9 @@ export default function Home() {
 
               {/* Overlapping smaller image - Logistics/Port, representing key clientele */}
               <div className="absolute bottom-0 left-0 w-3/5 h-[300px] rounded-3xl overflow-hidden shadow-2xl z-30 border-8 border-white">
-                <img 
-                  src="https://images.pexels.com/photos/1095814/pexels-photo-1095814.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                  alt="Secteur logistique et transit au port de Douala" 
+                <img
+                  src="https://images.pexels.com/photos/1095814/pexels-photo-1095814.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Secteur logistique et transit au port de Douala"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -132,7 +132,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* NEW SECTION: DOMAINES DE PRATIQUE (Practice Areas) */}
+      {/* DOMAINES DE PRATIQUE */}
       <section className="py-24 bg-white border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
@@ -147,7 +147,6 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Service 1 : Juridique & RH */}
             <div className="group bg-slate-50 rounded-2xl p-8 hover:bg-enora-blue transition-colors duration-300 shadow-sm border border-slate-100 hover:border-transparent flex flex-col">
               <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
                 <svg className="w-6 h-6 text-enora-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -165,7 +164,6 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Service 2 : Recouvrement */}
             <div className="group bg-slate-50 rounded-2xl p-8 hover:bg-enora-blue transition-colors duration-300 shadow-sm border border-slate-100 hover:border-transparent flex flex-col">
               <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
                 <svg className="w-6 h-6 text-enora-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -183,7 +181,6 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Service 3 : Audit & Assurance ENORA */}
             <div className="group bg-slate-50 rounded-2xl p-8 hover:bg-enora-blue transition-colors duration-300 shadow-sm border border-slate-100 hover:border-transparent flex flex-col">
               <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
                 <svg className="w-6 h-6 text-enora-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -204,31 +201,93 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-24 bg-slate-50 border-t border-slate-100">
+      {/* ILS NOUS ONT FAIT CONFIANCE */}
+      <section className="py-20 bg-white border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-enora-gold font-semibold tracking-wider uppercase text-sm mb-3">Réseau Pluriel</h2>
-          <h3 className="text-3xl sm:text-4xl font-heading font-bold text-enora-blue mb-12">
-            Les partenaires de la solution ENORA
-          </h3>
-          <div className="flex flex-wrap justify-center gap-4 md:gap-8 items-center opacity-80 grayscale hover:grayscale-0 transition-all duration-700 max-w-5xl mx-auto">
-            {partners.map(partner => (
-              <div key={partner} className="bg-white px-6 py-4 rounded-xl font-heading font-bold text-slate-700 shadow-sm border border-slate-200 flex-shrink-0 text-lg hover:shadow-md transition-shadow hover:text-enora-blue hover:border-enora-blue/20">
-                {partner}
-              </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-enora-gold font-bold tracking-widest uppercase text-sm mb-3">Clients</h2>
+            <h3 className="text-3xl sm:text-4xl font-heading font-bold text-enora-blue mb-4">
+              Ils nous ont fait confiance
+            </h3>
+            <div className="w-16 h-1 bg-enora-green mx-auto mb-12"></div>
+          </motion.div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
+            {clients.map((client, idx) => (
+              <motion.div
+                key={client.name}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.06, duration: 0.4 }}
+                className="group relative bg-slate-50 rounded-xl p-5 border border-slate-100 flex flex-col items-center justify-center text-center min-h-[100px] hover:bg-white hover:border-enora-blue/20 hover:shadow-lg transition-all duration-300 cursor-default"
+              >
+                <span className="text-sm sm:text-base font-heading font-bold text-slate-600 group-hover:text-enora-blue transition-colors leading-tight">
+                  {client.name}
+                </span>
+                <span className="text-[10px] text-slate-400 mt-1.5 font-medium tracking-wide uppercase group-hover:text-enora-green/70 transition-colors">
+                  {client.sector}
+                </span>
+              </motion.div>
             ))}
           </div>
+
+          <p className="mt-12 text-base text-slate-500 max-w-2xl mx-auto leading-relaxed">
+            PME, multinationales, établissements de santé ou acteurs de la logistique : notre cabinet accompagne une grande diversité d'organisations au Cameroun et dans la sous-région.
+          </p>
+        </div>
+      </section>
+
+      {/* NOS PARTENAIRES — mosaïque de logos */}
+      <section className="py-20 bg-slate-50 border-t border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-enora-gold font-semibold tracking-wider uppercase text-sm mb-3">Réseau Pluriel</h2>
+            <h3 className="text-3xl sm:text-4xl font-heading font-bold text-enora-blue mb-4">
+              Les partenaires de la solution ENORA
+            </h3>
+            <div className="w-16 h-1 bg-enora-green mx-auto mb-12"></div>
+          </motion.div>
+
+          <div className="flex flex-wrap justify-center gap-3 md:gap-4 items-center max-w-5xl mx-auto">
+            {partners.map((partner, idx) => (
+              <motion.div
+                key={partner}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.05, duration: 0.3 }}
+                className="group bg-white px-5 py-3 rounded-xl border border-slate-200 flex-shrink-0 hover:border-enora-blue/30 hover:shadow-md transition-all duration-300 cursor-default"
+              >
+                <span className="text-sm sm:text-base font-heading font-bold text-slate-500 group-hover:text-enora-blue transition-colors">
+                  {partner}
+                </span>
+              </motion.div>
+            ))}
+          </div>
+
           <p className="mt-12 text-base text-slate-500 max-w-2xl mx-auto leading-relaxed">
             Grâce à notre vaste réseau d'assureurs institutionnels, nous avons la capacité d'auditer vos contrats et de vous garantir les meilleures couvertures, associées à une indemnisation rapide de vos sinistres.
           </p>
         </div>
       </section>
 
-      {/* NEW CTA SECTION */}
+      {/* CTA SECTION */}
       <section className="relative py-24 bg-enora-blue overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.pexels.com/photos/5668802/pexels-photo-5668802.jpeg?auto=compress&cs=tinysrgb&w=2000" 
-            alt="Consultation juridique au Cameroun" 
+          <img
+            src="https://images.pexels.com/photos/5668802/pexels-photo-5668802.jpeg?auto=compress&cs=tinysrgb&w=2000"
+            alt="Consultation juridique au Cameroun"
             className="w-full h-full object-cover opacity-20 object-[center_30%]"
           />
           <div className="absolute inset-0 bg-enora-blue/80 mix-blend-multiply"></div>

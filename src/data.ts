@@ -90,9 +90,23 @@ export const enoraServices = [
   }
 ];
 
+export const clients = [
+  { name: "SCT Logistics", sector: "Transit & Logistique" },
+  { name: "CAM Industries", sector: "Industrie" },
+  { name: "BATIPRO SA", sector: "BTP" },
+  { name: "AfriTrade Group", sector: "Négoce International" },
+  { name: "Port Transit SA", sector: "Transport Maritime" },
+  { name: "Société Générale de Manutention", sector: "Manutention Portuaire" },
+  { name: "Ets. Mballa & Fils", sector: "Distribution" },
+  { name: "COTCO SA", sector: "Agro-industrie" },
+  { name: "Douala Freight Services", sector: "Transit" },
+  { name: "Hôtel Akwa Palace", sector: "Hôtellerie" },
+  { name: "Clinique Le Meridien", sector: "Santé" },
+  { name: "CMA CGM Cameroon", sector: "Shipping" },
+];
+
 export const partners = [
   "AXA", "Saar", "Chanas Assurances", "Zenithe", "AGC", "Activa",
   "NSIA", "AFG", "Royal Onyx", "ProAssur", "AREA", "CPA",
   "Sanlam Allianz", "Prudential Beneficial", "SUNU", "Wafa Assurance"
 ];
-
